@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 
 
 /* Controller Goes Here Remove the tes*/
-app.get('/test', (req, res)=>{
+app.get('/', (req, res)=>{
 	res.status(200).json({
 		website: 'My Website',
 		info: 'Not that much'
