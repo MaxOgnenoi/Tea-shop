@@ -1,4 +1,5 @@
-.MenuList {
+.MenuList {display: grid;
+    grid-template-columns: repeat(3, 1fr); 
     background-color: var(--tan-1);
     border: 0.1vmin solid var(--tan-3);
     border-radius: 2vmin;

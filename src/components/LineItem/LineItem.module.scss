@@ -1,7 +1,7 @@
 .LineItem {
     width: 100%;
-    display: grid;
-    grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
+    display: flex;
+    align-items:  center;
     padding: 1vmin 0;
     color: var(--text-light);
     background-color: var(--white);
@@ -30,3 +30,10 @@
     .LineItem button {
     margin: 0;
     }
+
+    .itemImage {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+      }

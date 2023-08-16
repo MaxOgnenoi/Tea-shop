@@ -1,13 +1,9 @@
 .Logo {
-    height: 12vmin;
-    width: 12vmin;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: var(--orange);
-    color: var(--tan-1);
+    background-image: url('https://d1dxs113ar9ebd.cloudfront.net/225batonrouge/2019/01/225_FeatureImageTemplate.jpg?q=70&crop=faces&fit=crop&w=1300&h=600');
+    background-size: cover;
+    height: 10rem;
+    width: 100%;
+    text-align: center;
     font-size: 2.7vmin;
     border: .6vmin solid var(--tan-2);
     }
