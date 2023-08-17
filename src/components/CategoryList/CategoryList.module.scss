@@ -1,28 +1,54 @@
+/* CategoryList.module.scss */
+
 .CategoryList {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    color: var(--text-light);
+    justify-content: center;
     list-style: none;
-    padding: 0;
-    font-size: 1.7vw;
-    }
-    
-    .CategoryList li {
-    padding: .6vmin;
+    font-size: 1.3vw;
+    margin: 0;
+    padding: 0.6rem;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .CategoryList li {
+    padding: 0.6vmin;
+    padding: 0 4rem 0 4rem;
     text-align: center;
-    border-radius: .5vmin;
-    margin-bottom: .5vmin;
-    }
-    
-    .CategoryList li:hover:not(.active) {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
     cursor: pointer;
-    background-color: var(--orange);
-    color: var(--white);
+    background-color: #000000;
+    position: relative; 
+    overflow: hidden;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, transparent, transparent 10%, rgba(255, 255, 255, 0.2), transparent 90%, transparent);
+      transform: skewX(45deg);
+      transition: left 0.6s ease-in-out;
     }
-    
-    .CategoryList li.active {
-    color: var(--text-dark);
-    background-color: var(--tan-1);
-    border: .1vmin solid var(--tan-3);
+  
+    &:hover {
+      cursor: pointer;
+  
+      background-color: #81a4c772;
+      color: #ffffff;
+  
+      &::before {
+        left: 100%;
+      }
     }
+  }
+  
+  .CategoryList li.active {
+    color: #ffffff;
+    background-color: #FFA500;
+    border: 0.1vmin solid #D2B48C;
+  }
+  

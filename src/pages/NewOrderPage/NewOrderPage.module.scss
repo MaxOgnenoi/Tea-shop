@@ -1,5 +1,5 @@
 
-.Header {
+.Logo {
     width: 100%;
   display: block;
   justify-content: center;
@@ -8,14 +8,15 @@
 }
 
 .NewOrderPage {
+  
   height: 100%;
-  background-color: var(--white);
-  border-radius: 2vmin;
+  background-color: rgb(81, 81, 81);
+ 
 }
 
 
 
 .Menu {
- 
-  margin: 3vmin 2vmin;
+ background-color: rgb(82, 77, 77);
+  margin: 1vmin 1vmin;
 }

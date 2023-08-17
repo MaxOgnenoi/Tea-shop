@@ -7,6 +7,7 @@ export default function MenuListItem({ menuItem, handleAddToOrder }) {
         <img src={menuItem.imageUrl} alt={menuItem.name} className={styles.image} />
       </div>
       <div className={styles.name}>{menuItem.name}</div>
+      <div className={styles.flavor}>{menuItem.flavor}</div>
       <div className={styles.buy}>
         <span>${menuItem.price.toFixed(2)}</span>
         <button className="btn-sm" onClick={() => handleAddToOrder(menuItem._id)}>
