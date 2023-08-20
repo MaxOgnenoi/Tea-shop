@@ -16,7 +16,7 @@ export default function NewOrderPage({ user, setUser }) {
   const categoriesRef = useRef([]);
   const navigate = useNavigate();
 
-  useEffect(function() {
+  useEffect(function () {
     async function getItems() {
       const items = await itemsAPI.getAll();
       categoriesRef.current = items.reduce((cats, item) => {
@@ -55,29 +55,33 @@ export default function NewOrderPage({ user, setUser }) {
 
   return (
     <main className={styles.NewOrderPage}>
-      <header>
-        <Logo />
-      </header>
-      <div>
-        
-        <CategoryList className={styles.Menu}
-          categories={categoriesRef.current}
-          cart={setCart}
-          setActiveCat={setActiveCat}
+      <div className={styles.LeftColumn}>
+        <div className={styles.LogoAndMenu}>
+          <Logo />
+          <CategoryList className={styles.Menu}
+            categories={categoriesRef.current}
+            cart={setCart}
+            setActiveCat={setActiveCat}
+          />
+        </div>
+        <MenuList
+          menuItems={menuItems.filter(item => item.category.name === activeCat)}
+          handleAddToOrder={handleAddToOrder}
         />
-       
       </div>
-      <MenuList
-        menuItems={menuItems.filter(item => item.category.name === activeCat)}
-        handleAddToOrder={handleAddToOrder}
-      />
-       <Link to="/orders" className="button btn-sm">PREVIOUS ORDERS</Link>
-        <UserLogOut user={user} setUser={setUser} />
-      <OrderDetail
-        order={cart}
-        handleChangeQty={handleChangeQty}
-        handleCheckout={handleCheckout}
-      />
+      <div className={styles.RightColumn}>
+        <div className={styles.HeaderTopBar}>
+        <OrderDetail
+            order={cart}
+            handleChangeQty={handleChangeQty}
+            handleCheckout={handleCheckout}
+          />
+          <Link to="/orders">PREVIOUS ORDERS</Link>
+          
+          <UserLogOut user={user} setUser={setUser} />
+          
+        </div>
+      </div>
     </main>
   );
 }

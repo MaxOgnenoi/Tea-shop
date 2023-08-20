@@ -1,22 +1,77 @@
+.NewOrderPage {
+  display: flex;
+  height: 100%;
+  background-color: rgb(81, 81, 81);
+  overflow: hidden; /* Prevent scrollbar */
+}
+
+.LeftColumn {
+  flex: 1;
+  padding: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; /* Add vertical scrollbar if needed */
+}
+
+.RightColumn {
+  width: 15%;
+  padding: 0.1rem;
+  background-color: rgb(33, 33, 33);
+  overflow: hidden; /* Hide overflow content */
+  display: flex;
+  flex-direction: column;
+}
 
 .Logo {
-    width: 100%;
+  width: 100%;
   display: block;
   justify-content: center;
   align-items: center;
-  /* Add any additional styling you want for the header */
 }
-
-.NewOrderPage {
-  
-  height: 100%;
-  background-color: rgb(81, 81, 81);
- 
-}
-
-
 
 .Menu {
- background-color: rgb(82, 77, 77);
+  background-color: rgb(82, 77, 77);
   margin: 1vmin 1vmin;
+}
+
+.HeaderTopBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  flex-grow: 1; /* Expand to fill available space */
+}
+
+.HeaderTopBar a {
+  text-decoration: none;
+  padding: 0.5rem 0.1rem;
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: var(--accent-dark);
+  }
+}
+.AuthPage {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  border-radius: 2vmin;
+}
+
+.AuthPage h3 {
+  margin-top: 4vmin;
+  text-align: center;
+  color: var(--text-light);
+  cursor: pointer;
 }

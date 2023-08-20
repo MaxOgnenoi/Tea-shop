@@ -129,7 +129,7 @@ a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
-  background-color: var(--orange);
+  background-color: rgb(63, 63, 63);
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
@@ -141,6 +141,7 @@ a.button {
 }
 
 button.btn-sm {
+  background-color: #474747;
   font-size: 1.5vmin;
   padding: .6vmin .8vmin;
 }

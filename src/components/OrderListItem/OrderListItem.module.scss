@@ -3,12 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3vmin;
+    margin-bottom: 1vmin;
     padding: 2vmin;
-    color: var(--text-light);
-    background-color: var(--white);
-    border: .2vmin solid var(--tan-3);
-    border-radius: 1vmin;
+    color: white;
+    background-color: rgba(66, 66, 66, 0.848);
+    border-radius: 5px;
     font-size: 2vmin;
     cursor: pointer;
     }

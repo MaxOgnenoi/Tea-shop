@@ -8,8 +8,8 @@
     font-size: 1.3vw;
     margin: 0;
     padding: 0.6rem;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: rgb(33, 33, 33);
+    color: aliceblue;
   }
   
   .CategoryList li {
@@ -18,7 +18,6 @@
     text-align: center;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
     cursor: pointer;
-    background-color: #000000;
     position: relative; 
     overflow: hidden;
   
@@ -37,7 +36,7 @@
     &:hover {
       cursor: pointer;
   
-      background-color: #81a4c772;
+      background-color: #ffffff5e;
       color: #ffffff;
   
       &::before {

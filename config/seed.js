@@ -12,8 +12,8 @@ const Item = require('../models/item');
     { name: 'Green Tea', sortOrder: 20 },
     { name: 'Herbal Tea', sortOrder: 30 },
     { name: 'White Tea', sortOrder: 40 },
-    { name: 'Oolong Teas', sortOrder: 50 },
-    { name: 'Caffeine free Teas', sortOrder: 60 },
+    { name: 'Oolong Tea', sortOrder: 50 },
+    { name: 'Caffeine-free Tea', sortOrder: 60 },
   ]);
 
   await Item.deleteMany({});
@@ -281,8 +281,15 @@ const Item = require('../models/item');
       name: 'Lavender Chamomile Rose Blend',
       category: categories[5],
       price: 5.95,
-      imageUrl: 'TASTING NOTES: FLORAL, FRESH, HONEY',
-      flavor: "https://www.artoftea.com/cdn/shop/products/6_00PM_ab9b71cf-d31d-43f8-ac2c-a6ba9313e5b7_1200x.jpg?v=1623182945",
+      imageUrl: 'https://www.artoftea.com/cdn/shop/products/6_00PM_ab9b71cf-d31d-43f8-ac2c-a6ba9313e5b7_1200x.jpg?v=1623182945',
+      flavor: "TASTING NOTES: FLORAL, FRESH, HONEY",
+    },
+    {
+      name: 'Orange Oolong Tea',
+      category: categories[5],
+      price: 5.95,
+      imageUrl: 'https://www.artoftea.com/cdn/shop/products/PLUM_OOLONG_1200x.jpg?v=1582494613',
+      flavor: "TASTING NOTES: FRUITY, FULL, TART",
     },
   ]);
 

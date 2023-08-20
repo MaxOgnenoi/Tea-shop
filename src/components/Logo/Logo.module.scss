@@ -1,17 +1,16 @@
 .Logo {
-  background-image: url('https://d1dxs113ar9ebd.cloudfront.net/225batonrouge/2019/01/225_FeatureImageTemplate.jpg?q=70&crop=faces&fit=crop&w=1300&h=600');
-  background-size: cover;
-  background-position: center -80px; /* Move the background up by 100px */
-  height: 12rem;
+  background-image: url('https://www.mynaturalorigins.com/hubfs/images%20blog/gamme-de-thes-et-infusions-natural-origins-1.jpg');
+  background-position: center -400px;
+  
+  height: 10rem;
   width: 100%;
   text-align: center;
-  border: 0.6vmin solid var(--tan-2);
-  font-family: 'Montserrat', sans-serif;
   font-family: 'Sacramento', cursive;
 }
 
 .StoreName {
-  font-size: 6rem;
+  color: aliceblue;
+  font-size: 7rem;
   text-shadow: 2px 2px 4px rgba(252, 252, 252, 0.2); /* Add a subtle text shadow */
   transition: text-shadow 0.3s ease-in-out; /* Add transition for the effect */
 }
@@ -21,6 +20,8 @@
 }
 
 .Tagline {
+
+  color: aliceblue;
   font-size: 3rem;
-  margin-top: -1rem;
+  margin-top: -4rem;
 }
