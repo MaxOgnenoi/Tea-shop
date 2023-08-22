@@ -1132,17 +1132,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* CategoryList.module.scss */
 }
 .l8hJyaPvo9smd6LiNqWK li:hover::before {
   left: 100%;
-}
-
-.l8hJyaPvo9smd6LiNqWK li._scckhAN2KPE1u73kR14 {
-  color: #ffffff;
-  background-color: #FFA500;
-  border: 0.1vmin solid #D2B48C;
-}`, "",{"version":3,"sources":["webpack://./src/components/CategoryList/CategoryList.module.scss"],"names":[],"mappings":"AAAA,6BAAA;AAEA;EACI,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,gBAAA;EACA,gBAAA;EACA,SAAA;EACA,eAAA;EACA,iCAAA;EACA,gBAAA;AAAJ;;AAGE;EACE,gBAAA;EACA,sBAAA;EACA,kBAAA;EACA,yEAAA;EACA,eAAA;EACA,kBAAA;EACA,gBAAA;AAAJ;AAEI;EACE,WAAA;EACA,kBAAA;EACA,MAAA;EACA,WAAA;EACA,WAAA;EACA,YAAA;EACA,2HAAA;EACA,uBAAA;EACA,iCAAA;AAAN;AAGI;EACE,eAAA;EAEA,kDAAA;EACA,cAAA;AAFN;AAIM;EACE,UAAA;AAFR;;AAOE;EACE,cAAA;EACA,yBAAA;EACA,6BAAA;AAJJ","sourcesContent":["/* CategoryList.module.scss */\n\n.CategoryList {\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    list-style: none;\n    font-size: 1.3vw;\n    margin: 0;\n    padding: 0.6rem;\n    background-color: rgb(33, 33, 33);\n    color: aliceblue;\n  }\n  \n  .CategoryList li {\n    padding: 0.6vmin;\n    padding: 0 4rem 0 4rem;\n    text-align: center;\n    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;\n    cursor: pointer;\n    position: relative; \n    overflow: hidden;\n  \n    &::before {\n      content: '';\n      position: absolute;\n      top: 0;\n      left: -100%;\n      width: 100%;\n      height: 100%;\n      background: linear-gradient(to right, transparent, transparent 10%, rgba(255, 255, 255, 0.2), transparent 90%, transparent);\n      transform: skewX(45deg);\n      transition: left 0.6s ease-in-out;\n    }\n  \n    &:hover {\n      cursor: pointer;\n  \n      background-color: #ffffff5e;\n      color: #ffffff;\n  \n      &::before {\n        left: 100%;\n      }\n    }\n  }\n  \n  .CategoryList li.active {\n    color: #ffffff;\n    background-color: #FFA500;\n    border: 0.1vmin solid #D2B48C;\n  }\n  "],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/CategoryList/CategoryList.module.scss"],"names":[],"mappings":"AAAA,6BAAA;AAEA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,gBAAA;EACA,gBAAA;EACA,SAAA;EACA,eAAA;EACA,iCAAA;EACA,gBAAA;AAAF;;AAGA;EACE,gBAAA;EACA,sBAAA;EACA,kBAAA;EACA,yEAAA;EACA,eAAA;EACA,kBAAA;EACA,gBAAA;AAAF;AAIE;EACE,WAAA;EACA,kBAAA;EACA,MAAA;EACA,WAAA;EACA,WAAA;EACA,YAAA;EACA,2HAAA;EACA,uBAAA;EACA,iCAAA;AAFJ;AAKE;EACE,eAAA;EACA,kDAAA;EACA,cAAA;AAHJ;AAKI;EACE,UAAA;AAHN","sourcesContent":["/* CategoryList.module.scss */\n\n.CategoryList {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  list-style: none;\n  font-size: 1.3vw;\n  margin: 0;\n  padding: 0.6rem;\n  background-color: rgb(33, 33, 33);\n  color: aliceblue;\n}\n\n.CategoryList li {\n  padding: 0.6vmin;\n  padding: 0 4rem 0 4rem;\n  text-align: center;\n  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;\n  cursor: pointer;\n  position: relative;\n  overflow: hidden;\n\n \n\n  &::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: -100%;\n    width: 100%;\n    height: 100%;\n    background: linear-gradient(to right, transparent, transparent 10%, rgba(255, 255, 255, 0.2), transparent 90%, transparent);\n    transform: skewX(45deg);\n    transition: left 0.6s ease-in-out;\n  }\n\n  &:hover {\n    cursor: pointer;\n    background-color: #ffffff5e;\n    color: #ffffff;\n\n    &::before {\n      left: 100%;\n    }\n  }\n  \n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"CategoryList": `l8hJyaPvo9smd6LiNqWK`,
-	"active": `_scckhAN2KPE1u73kR14`
+	"CategoryList": `l8hJyaPvo9smd6LiNqWK`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
