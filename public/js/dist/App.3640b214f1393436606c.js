@@ -118,16 +118,19 @@ function LoginForm(_ref) {
   }
   function _handleSubmit() {
     _handleSubmit = _asyncToGenerator(function* (evt) {
-      // Prevent form from being submitted to the server
       evt.preventDefault();
       try {
-        // The promise returned by the signUp service method
-        // will resolve to the user object included in the
-        // payload of the JSON Web Token (JWT)
         const user = yield _utilities_users_service__WEBPACK_IMPORTED_MODULE_1__.login(credentials);
-        setUser(user);
-      } catch (_unused) {
-        setError('Log In Failed - Try Again');
+        // Assuming your login service returns specific error messages on failure.
+        if (user.error) {
+          setError(user.error); // Display the specific error message from the server.
+        } else {
+          setUser(user);
+          // Clear the error if the login was successful.
+          setError('');
+        }
+      } catch (error) {
+        setError('An unexpected error occurred.'); // Handle unexpected errors.
       }
     });
     return _handleSubmit.apply(this, arguments);
